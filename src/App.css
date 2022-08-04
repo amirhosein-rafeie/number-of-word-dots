@@ -1,0 +1,77 @@
+.App {
+  background-color: #83c5be;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  height: fit-content;
+  position: relative;
+  margin-bottom: 5px;
+  padding-top: 20px;
+}
+
+.custom-field {
+  font-size: 14px;
+  cursor: text;
+}
+
+.custom-field input {
+  appearance: none;
+  border: none;
+  background: #efefef;
+  padding: 12px;
+  border-radius: 3px;
+  width: 250px;
+  outline: none;
+  font-size: 14px;
+}
+
+.custom-field .placeholder {
+  position: absolute;
+  right: 12px;
+  top: calc(50% + 10px);
+  transform: translateY(-50%);
+  color: #aaa;
+  transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.custom-field input:valid + .placeholder,
+.custom-field input:focus + .placeholder {
+  top: 10px;
+  font-size: 10px;
+  color: #222;
+}
+
+.bt {
+  width: 80px;
+  height: 35px;
+  border-radius: 3px;
+  background-color: #dd7550;
+  color: #fff;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.bt:hover {
+  background-color: #c97a5d;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.334);
+}
+
+.display-count-box {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333333;
+}
+.display-count-box span {
+  color: #dd7550;
+}
